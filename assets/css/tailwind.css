@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+h1 {
+    @apply text-5xl
+}
+
+body {
+    @apply bg-gray-900 text-white;
+}
+
+header {
+    @apply shadow-sm bg-gray-800;
+}
+
+main {
+    @apply container mx-auto px-4 py-8 flex;
+}
+
+.card {
+    @apply
+    flex flex-col md:flex-row items-center
+    border border-gray-600
+    bg-gray-800
+    md:max-w-2xl
+    rounded-lg
+    shadow
+    hover:bg-gray-700
+    cursor-pointer;
+}
+
+.card-image-container {
+    @apply w-full h-[360px] md:w-[192px] md:h-[192px];
+}
+
+.card-image-container img {
+    @apply object-cover w-full h-full rounded-t-lg md:rounded-none md:rounded-s-lg;
+}
+
+.details {
+    @apply flex flex-col justify-between p-4 leading-normal;
+}
+
+.details p {
+    @apply mb-2 text-sm md:text-base font-normal text-gray-700 text-gray-400;
+}
+
+.details h3 {
+    @apply mb-2 text-base md:text-lg font-bold tracking-tight;
+}
+
+.modal-container {
+    @apply bg-black !important;
+}
+
+.modal-image-container {
+    @apply relative h-full w-full;
+}
+
+.modal-image-container img {
+    @apply h-full w-full object-contain;
+}
+
+.modal-image-container .close-button {
+    @apply absolute top-2.5 right-2.5;
+}
+
+.close-button svg {
+   @apply w-6 h-6 text-gray-800 text-white;
+}
+
+.error-container {
+    @apply h-screen flex flex-col items-center justify-center
+}
+
+.error-container h1 {
+    @apply mb-6
+}
+
+.error-container p {
+    @apply text-lg
+}
+
+.error-buttons-container {
+    @apply flex gap-4 mt-6
+}
+
+.default-button {
+    @apply border focus:outline-none focus:ring-4 font-medium rounded-lg text-sm px-5 py-2.5 bg-gray-800 text-white border-gray-600 hover:bg-gray-700 hover:border-gray-600 focus:ring-gray-700
+}
